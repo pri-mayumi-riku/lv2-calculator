@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>電卓</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="calculator">
+    <h1>電卓</h1>
+
+    <div class="buttons">
+      <input id="result" class="display" value="0" readonly>
+      <button type="button" onclick="clearAll()">C</button>
+
+      <button type="button" onclick="appendNumber('7')">7</button>
+      <button type="button" onclick="appendNumber('8')">8</button>
+      <button type="button" onclick="appendNumber('9')">9</button>
+      <button type="button" onclick="appendOperator('÷')">÷</button>
+
+      <button type="button" onclick="appendNumber('4')">4</button>
+      <button type="button" onclick="appendNumber('5')">5</button>
+      <button type="button" onclick="appendNumber('6')">6</button>
+      <button type="button" onclick="appendOperator('×')">×</button>
+
+      <button type="button" onclick="appendNumber('1')">1</button>
+      <button type="button" onclick="appendNumber('2')">2</button>
+      <button type="button" onclick="appendNumber('3')">3</button>
+      <button type="button" onclick="appendOperator('-')">-</button>
+
+      <button type="button" onclick="appendNumber('0')">0</button>
+      <button type="button" onclick="appendNumber('.')">.</button>
+      <button type="button" onclick="equal()">＝</button>
+      <button type="button" onclick="appendOperator('+')">+</button>
+    </div>
+
+
+    <h2>計算履歴</h2>
+    <div id="history"></div>
+    
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
